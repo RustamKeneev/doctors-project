@@ -66,6 +66,10 @@ class DoctorView(ModelViewSet):
         instance.delete()
 
 
+
+
+
+
 class DoctorTypeView(ModelViewSet):
     queryset = DoctorType.objects.all()
     serializer_class = DoctorTypeSerializer

@@ -1,7 +1,6 @@
 from rest_framework.permissions import BasePermission
 
-from models import Doctors
-
+from doctors.models import Doctors
 
 class IsDoctorsOwner(BasePermission):
     def has_permission(self, request, view):

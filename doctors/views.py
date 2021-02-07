@@ -8,7 +8,7 @@ from rest_framework.viewsets import ModelViewSet
 from doctors.models import Doctors, DoctorType, MedicalStaffPositions
 from doctors.serializer import DoctorListSerializer, DoctorDetailSerializer, DoctorTypeSerializer, \
     MedicalStaffPositionsSerializer
-from permissions import IsDoctorsOwner
+from doctors.permissions import IsDoctorsOwner
 
 
 class DoctorListView(ListAPIView):

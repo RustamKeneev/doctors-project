@@ -35,6 +35,7 @@ class MedicalStaffPositions(models.Model):
 
     name = models.CharField('Должность специалиста', max_length=256)
     medical_staff_count = models.PositiveIntegerField('Количество объявлений', editable=False, default=0)
+    image = models.ImageField(upload_to='medical_staff/', null=True)
 
     def __str__(self):
         return self.name
@@ -46,6 +47,7 @@ class DoctorType(models.Model):
         verbose_name_plural = 'Профессии специалистов'
 
     name = models.CharField('Название специалиста', max_length=256)
+    image = models.ImageField(upload_to='doctor_type/', null=True)
 
     def __str__(self):
         return self.name
